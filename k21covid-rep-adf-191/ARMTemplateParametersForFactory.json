@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "k21covid-rep-adf-191"
+		},
+		"ls_ablob_covidrepsa_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covidrepdl_accountKey": {
+			"value": ""
+		},
+		"is_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/hbuddana/Azure_Data_Factory_COVID-19_Reporting/main/dataset/ds_ecdc_file_list.json"
+		},
+		"ls_adls_covidrepdl_properties_typeProperties_url": {
+			"value": "https://k21covidrepadls191.dfs.core.windows.net/"
+		}
+	}
+}
