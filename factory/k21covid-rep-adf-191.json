@@ -1,0 +1,9 @@
+{
+	"name": "k21covid-rep-adf-191",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f7a27bd4-0f39-457b-ad2c-d9db061bdfb2",
+		"tenantId": "65315c02-ad62-4a35-afdd-647051a2bb85"
+	}
+}

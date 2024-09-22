@@ -1,0 +1,17 @@
+{
+	"name": "SourceDataset_jnx",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "is_http_opendata_ecdc_europa_eu",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
