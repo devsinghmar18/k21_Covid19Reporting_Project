@@ -35,6 +35,10 @@
 					"name": "WeeklySink"
 				},
 				{
+					"dataset": {
+						"referenceName": "ds_hospital_admission_daily",
+						"type": "DatasetReference"
+					},
 					"name": "DailySink"
 				}
 			],
@@ -231,6 +235,19 @@
 				"     skipDuplicateMapOutputs: true) ~> WeeklySink",
 				"SelectDaily sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     input(",
+				"          country_code as string,",
+				"          population as string,",
+				"          indicator as string,",
+				"          daily_count as string,",
+				"          country as string,",
+				"          country_code_2_digit as string,",
+				"          country_code_3_digit as string,",
+				"          continent as string",
+				"     ),",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> DailySink"
 			]
