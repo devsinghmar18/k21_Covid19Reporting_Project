@@ -234,14 +234,23 @@
 							},
 							{
 								"source": {
+									"name": "reported_week_start_date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "reported_date",
+									"type": "date"
+								}
+							},
+							{
+								"source": {
 									"name": "new_hospital_occupancy_count",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "cases_count",
-									"type": "bigint",
-									"precision": 19
+									"name": "hospital_occupancy_count"
 								}
 							},
 							{
@@ -251,20 +260,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "deaths_count",
-									"type": "bigint",
-									"precision": 19
-								}
-							},
-							{
-								"source": {
-									"name": "reported_week_start_date",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "reported_date",
-									"type": "date"
+									"name": "icu_occupancy_count"
 								}
 							},
 							{
