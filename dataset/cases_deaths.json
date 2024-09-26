@@ -45,8 +45,8 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "covid_reporting_schema",
-			"table": "cases_and_deaths"
+			"schema": "covid_reporting",
+			"table": "hospital_admissions_daily"
 		}
 	}
 }
