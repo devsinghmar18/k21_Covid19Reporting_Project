@@ -245,26 +245,6 @@
 							},
 							{
 								"source": {
-									"name": "new_hospital_occupancy_count",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "hospital_occupancy_count"
-								}
-							},
-							{
-								"source": {
-									"name": "new_icu_occupancy_count",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "icu_occupancy_count"
-								}
-							},
-							{
-								"source": {
 									"name": "source",
 									"type": "String",
 									"physicalType": "String"
