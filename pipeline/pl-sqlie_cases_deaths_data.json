@@ -20,7 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"wildcardFileName": "*",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -85,6 +84,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "icu_occupancy_count",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "cases_count",
 									"type": "Int64",
@@ -92,6 +96,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "hospital_occupancy_count",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "deaths_count",
 									"type": "Int64",
@@ -99,6 +108,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "reported_date",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "reported_date",
 									"type": "DateTime",
@@ -106,6 +120,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "source",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "source",
 									"type": "String",
