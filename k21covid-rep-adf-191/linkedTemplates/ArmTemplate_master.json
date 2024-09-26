@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'democbrics'"
 		},
+		"ls_sql_covid_db_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_sql_covid_db'"
+		},
 		"is_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/hbuddana/Azure_Data_Factory_COVID-19_Reporting/main/dataset/ds_ecdc_file_list.json"
@@ -73,6 +77,9 @@
 					},
 					"democbrics_accessToken": {
 						"value": "[parameters('democbrics_accessToken')]"
+					},
+					"ls_sql_covid_db_connectionString": {
+						"value": "[parameters('ls_sql_covid_db_connectionString')]"
 					},
 					"is_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 						"value": "[parameters('is_http_opendata_ecdc_europa_eu_properties_typeProperties_url')]"
