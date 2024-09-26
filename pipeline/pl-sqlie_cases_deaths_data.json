@@ -195,8 +195,7 @@
 								},
 								"sink": {
 									"name": "country",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "varchar"
 								}
 							},
 							{
@@ -207,8 +206,7 @@
 								},
 								"sink": {
 									"name": "country_code_2_digit",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "varchar"
 								}
 							},
 							{
@@ -219,8 +217,7 @@
 								},
 								"sink": {
 									"name": "country_code_3_digit",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "varchar"
 								}
 							},
 							{
@@ -231,8 +228,32 @@
 								},
 								"sink": {
 									"name": "population",
-									"type": "Int64",
-									"physicalType": "bigint"
+									"type": "bigint",
+									"precision": 19
+								}
+							},
+							{
+								"source": {
+									"name": "new_hospital_occupancy_count",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cases_count",
+									"type": "bigint",
+									"precision": 19
+								}
+							},
+							{
+								"source": {
+									"name": "new_icu_occupancy_count",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "deaths_count",
+									"type": "bigint",
+									"precision": 19
 								}
 							},
 							{
@@ -243,30 +264,7 @@
 								},
 								"sink": {
 									"name": "reported_date",
-									"type": "DateTime",
-									"physicalType": "date"
-								}
-							},
-							{
-								"source": {
-									"name": "new_hospital_occupancy_count",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "hospital_occupancy_count",
-									"physicalType": "bigint"
-								}
-							},
-							{
-								"source": {
-									"name": "new_icu_occupancy_count",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "icu_occupancy_count",
-									"physicalType": "date"
+									"type": "date"
 								}
 							},
 							{
@@ -277,8 +275,7 @@
 								},
 								"sink": {
 									"name": "source",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "varchar"
 								}
 							}
 						],
