@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "k21covid-rep-adf-191"
 		},
+		"democbrics_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'democbrics'"
+		},
 		"ls_ablob_covidrepsa_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_ablob_covidrepsa'"
@@ -19,13 +23,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'ls_db_covid_cluster'"
 		},
-		"democbrics_accessToken": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'democbrics'"
-		},
 		"ls_sql_covid_db_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_sql_covid_db'"
+		},
+		"democbrics_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0926-062002-4bg0uwgu"
 		},
 		"is_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"type": "string",
@@ -34,10 +38,6 @@
 		"ls_adls_covidrepdl_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://k21covidrepadls191.dfs.core.windows.net/"
-		},
-		"democbrics_properties_typeProperties_existingClusterId": {
-			"type": "string",
-			"defaultValue": "0926-062002-4bg0uwgu"
 		},
 		"containerUri": {
 			"type": "string",
@@ -66,6 +66,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"democbrics_accessToken": {
+						"value": "[parameters('democbrics_accessToken')]"
+					},
 					"ls_ablob_covidrepsa_connectionString": {
 						"value": "[parameters('ls_ablob_covidrepsa_connectionString')]"
 					},
@@ -75,20 +78,17 @@
 					"ls_db_covid_cluster_accessToken": {
 						"value": "[parameters('ls_db_covid_cluster_accessToken')]"
 					},
-					"democbrics_accessToken": {
-						"value": "[parameters('democbrics_accessToken')]"
-					},
 					"ls_sql_covid_db_connectionString": {
 						"value": "[parameters('ls_sql_covid_db_connectionString')]"
+					},
+					"democbrics_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('democbrics_properties_typeProperties_existingClusterId')]"
 					},
 					"is_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 						"value": "[parameters('is_http_opendata_ecdc_europa_eu_properties_typeProperties_url')]"
 					},
 					"ls_adls_covidrepdl_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_covidrepdl_properties_typeProperties_url')]"
-					},
-					"democbrics_properties_typeProperties_existingClusterId": {
-						"value": "[parameters('democbrics_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},
